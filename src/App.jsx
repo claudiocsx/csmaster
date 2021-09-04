@@ -1,8 +1,10 @@
+import { TopBar } from "./components/TopBar"
+
 const App = () =>{
   return(
-    <div>
-      testando
-    </div>
+    <>
+      <TopBar/>
+    </>
   )
 }
 

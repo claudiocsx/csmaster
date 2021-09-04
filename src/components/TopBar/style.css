@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.topbarLeft{
+    flex: 3;
+    background: brown;
+}
+
+.topbarCenter{
+    flex: 4;
+    background: burlywood;
+}
+
+.topbarRigth{
+    flex: 3;
+    background: coral;
+}
