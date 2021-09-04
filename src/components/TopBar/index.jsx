@@ -6,22 +6,25 @@ export const TopBar = () => {
             <div className="container">
                 <div className="topbarLeft">
                     <div className="logoImg">
-                        <a href="#">csmaster</a>
+                        <img src="/assets/logo.jpg" alt="" />
                     </div>
                 </div>
 
                 <div className="topbarCenter">
+                    <div className="links">
                         <ul>
-                            <li><a href="#">produtos</a></li>
-                            <li><a href="#">serviços</a></li>
-                            <li><a href="#">Sobre</a></li>
-                            <li><a href="#">Agendamento</a></li>
+                            <li ><a className="itemLinks" href="#">produtos</a></li>
+                            <li ><a className="itemLinks" href="#">serviços</a></li>
+                            <li ><a className="itemLinks" href="#">Sobre</a></li>
+                            <li ><a className="itemLinks" href="#">Agendamento</a></li>
                         </ul>
+                    </div>
+                        
                 </div>
                 <div className="topbarRigth">    
                         <div className="topbarBtn">
                             <a href="#">
-                                produtos
+                                meu Carinho
                             </a>
                         </div>
                     </div>

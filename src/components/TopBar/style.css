@@ -1,22 +1,140 @@
+header{
+    display: flex;
+    overflow: hidden;
+}
+
 .container{
     display: flex;
+    justify-content: center;
+    background-color: black;
     width: 100%;
     align-items: center;
     position: sticky;
     top: 0;
+    
 }
 
 .topbarLeft{
+    display: flex;
     flex: 3;
-    background: brown;
+    
+}
+
+.logoImg{
+    margin: 0 50px;
+    padding: 10px;
+}
+
+.logoImg img{
+    width:130px;
+    height: 130px;
+    border-radius: 50%;
 }
 
 .topbarCenter{
-    flex: 4;
-    background: burlywood;
+    display: flex;
+    flex: 3;
+   
+}
+.links{
+    display: flex;
+}
+.links ul{
+    display: flex;
+    list-style: none;
+}
+
+.itemLinks{
+    text-decoration: none;
+    color: #ffba08;
+    font-size: 1rem;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 2s ;
+    text-transform: uppercase;
+}
+
+.itemLinks:hover{
+    color: #e85d04;
 }
 
 .topbarRigth{
     flex: 3;
-    background: coral;
+   
+}
+
+.topbarBtn{
+    background-color: #ffba08;
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 140px;
+    
+}
+
+.topbarBtn a{
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+
+/* mobele */
+
+@media (max-width: 1014px){
+    .logoImg img{
+        width: 50px;
+        height: 50px;
+        bottom: 50%;
+    }
+
+    .itemLinks{
+        font-size: 12px;
+    }
+}    
+
+@media (max-width: 900px){
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.logoImg img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin-left: 50px;
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li{
+    margin: 10px;
+}
+
+.itemLinks {
+    font-size: 20px;
+    margin: 20px 0;
+}
+    
+.topbarBtn{
+    width: 200px;
+    position: relative;
+    left: 20px;
+    margin: 10px 0;
+}
 }
