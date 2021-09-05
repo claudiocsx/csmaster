@@ -1,0 +1,64 @@
+.servicoContiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.servico{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin: 20px;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100px;
+}
+
+.wapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicoTitle{
+    font-size: 40px;
+    color: #03071e;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.servicoMim{
+    color: #495057;
+    font-size: 15px;
+}
+
+.servicoPrice{
+    font-size: 60px;
+    font-weight: 700;
+    color: #03071e;
+    margin: 50px 0;
+}
+
+.servicoBtn button{
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e85d04;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
