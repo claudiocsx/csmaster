@@ -10,7 +10,7 @@ export const Servico = () => {
             {servico.length !==0 && <h1>Serviços</h1>}
           <div className="servicoContiner">
               {serviços.map(servico => (
-                   <div className="servico">
+                   <div className="servico" key={servico.servicoID}>
                    <div className="wapper">
                        <div className="main">
                         <span className='servicoTitle'>{servico.nome}</span>
