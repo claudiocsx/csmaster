@@ -4,7 +4,7 @@ export const Logaut = () => {
         <div className="logoutContainer" >
            
             <div className="logout">
-            <h1 className="logoutTitle" >logout</h1> 
+            <h1 className="logoutTitle" >Register </h1> 
               <label htmlFor="" className="logoutLabel">nome</label>
               <input className="logoutInput" type="text" />
               <label htmlFor="" className="logoutLabel">e-mail</label>

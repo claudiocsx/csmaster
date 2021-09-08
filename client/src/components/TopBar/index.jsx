@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
 export const TopBar = () => {
@@ -6,17 +7,19 @@ export const TopBar = () => {
             <div className="container">
                 <div className="topbarLeft">
                     <div className="logoImg">
-                        <img src="/assets/logo.jpg" alt="" />
+                        <Link to='/'>
+                            <img src="/assets/logo.jpg" alt="" />
+                        </Link>
                     </div>
                 </div>
 
                 <div className="topbarCenter">
                     <div className="links">
                         <ul>
-                            <li ><a className="itemLinks" href="#">produtos</a></li>
-                            <li ><a className="itemLinks" href="#">serviços</a></li>
-                            <li ><a className="itemLinks" href="#">Sobre</a></li>
-                            <li ><a className="itemLinks" href="#">Agendamento</a></li>
+                            <li ><Link to='/produtos' className="itemLinks" >produtos</Link></li>
+                            <li ><Link to='/servico' className="itemLinks" >serviços</Link></li>
+                            <li ><Link to='/Sobre' className="itemLinks" >Sobre</Link></li>
+                            <li ><Link to='/agendamentos' className="itemLinks" >Agendamento</Link></li>
                         </ul>
                     </div>
                         
